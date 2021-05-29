@@ -1,38 +1,19 @@
-# create-svelte
+# Boilerplate for SvelteKit + Tailwind JIT + Typescript
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+## Usage
 
-## Creating a project
+Clone this repository and initialize your own application with the SvelteKit + Tailwind JIT ready to use for both development and production environment.
 
-If you're seeing this, you've probably already done this step. Congrats!
+To run the svelte app, please check the [Svelte Kit documentation](https://kit.svelte.dev/docs).
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Source
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+The repository is initialized from the svelte-kit CLI: `npm init svelte@next`.
+Preconfigured with `Typescript`, `Prettier` and `ESLint`.
+Based on the `create-svelteversion 2.0.0-next.71`.
 
-> Note: the `@next` is temporary
+This repository is inspired from the post: [Sveltekit & Tailwind CSS Combo](https://dev.to/gevera/sveltekit-tailwind-css-combo-gdp), and built for reference.
 
-## Developing
+Once the tailwind is installed, add the `tailwind` and `autoprefixer` to the postcss setup in `svelte.config.js`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+Then, add the `<style>` with tailwind imported in the Svelte template.
